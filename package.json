@@ -1,0 +1,25 @@
+{
+  "name": "your-first-npm-module",
+  "version": "0.0.0",
+  "description": "Learn to make an NPM module",
+  "main": "index.js",
+  "bin": {
+    "your-first-npm-module": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iceddev/your-first-npm-module"
+  },
+  "author": "Blaine Bublitz <blaine@iceddev.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iceddev/your-first-npm-module/issues"
+  },
+  "dependencies": {
+    "workshopper": "~0.3.3",
+    "lodash.pluck": "~2.2.1"
+  }
+}
