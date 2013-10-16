@@ -3,5 +3,3 @@ npm is the package manager for the Node JavaScript platform. It puts modules in 
 It is extremely configurable to support a wide variety of use cases. Most commonly, it is used to publish, discover, install, and develop node programs.
 
 Run {bold}`npm help`{/bold} to get usage information and a list of available commands.
-
-{underline}Challenge{/underline}: Log usage as defined by {bold}`npm help`{/bold}.

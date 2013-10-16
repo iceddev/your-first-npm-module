@@ -1,5 +1,3 @@
 Discovering modules can be done at the command line, or at https://npmjs.org/
 
 To search at the command line, use {bold}`npm search`{/bold} or {bold}`npm s`{/bold} for short.
-
-{underline}Challenge{/underline}: Search for lodash's pluck method. Log the name of it.
