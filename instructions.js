@@ -14,7 +14,6 @@ function header(text){
 function instructions(headerText, filename){
   header(headerText);
   console.log(fs.readFileSync(__dirname + '/instructions/' + filename + '.txt', 'utf-8'));
-  console.log('{grey}Note: output may be formatted better when using npm commands outside this tutorial{/grey}');
 }
 
 module.exports = instructions;

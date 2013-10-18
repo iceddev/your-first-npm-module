@@ -2,7 +2,7 @@ var spawn = require('child_process').spawn;
 
 var when = require('when');
 
-function solution(command){
+function attempt(command){
   if(!command){
     return;
   }
@@ -16,7 +16,9 @@ function solution(command){
 
   var defer = when.defer();
   var result = '';
-  var child = spawn(cmd, args);
+  var child = spawn(cmd, args, {
+    stdio: [process.stdin]
+  });
   child.stdout.setEncoding('utf8');
   child.stderr.setEncoding('utf8');
   child.stdout
@@ -26,7 +28,9 @@ function solution(command){
     .on('close', function(code){
       defer.resolve(result);
     });
+  child.stdout.pipe(process.stdout);
+  child.stderr.pipe(process.stderr);
   return defer.promise;
 }
 
-module.exports = solution;
+module.exports = attempt;

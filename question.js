@@ -3,6 +3,7 @@ var readline = require('readline');
 var when = require('when');
 
 var solution = require('./solution');
+var attempt = require('./attempt');
 
 var successMessage = '{blue}{bold}Challenge Completed{/bold}{/blue}';
 var failureMessage = '{red}{bold}Try Again{/bold}{/red}';
@@ -34,27 +35,22 @@ function question(text, expectedCmd, success){
   }
 
   success = success || function(data){
-    if(typeof data[0] === 'string'){
-      console.log(data[0]);
-    }
-
     return data[0] === data[1];
   };
 
   console.log(text);
   rl.prompt();
-  rl.on('line', function(cmd){
-    when.join(solution(cmd), expected)
+  rl.once('line', function(cmd){
+    rl.close();
+    when.join(attempt(cmd), expected)
       .then(success)
       .then(function(passed){
         if(passed){
           console.log(successMessage);
-          rl.close();
           defer.resolve();
         } else {
           console.log(failureMessage);
-          console.log(text);
-          rl.prompt();
+          when(question(text, expectedCmd, success), defer.resolve);
         }
       });
   });
