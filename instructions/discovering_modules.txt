@@ -1,3 +1,7 @@
 Discovering modules can be done at the command line, or at https://npmjs.org/
 
 To search at the command line, use {bold}`npm search`{/bold} or {bold}`npm s`{/bold} for short.
+
+You can pass any amount of search terms to the search command.
+
+Example: {bold}`npm search lodash unique`{/bold}

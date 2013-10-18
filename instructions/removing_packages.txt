@@ -1,0 +1,5 @@
+Sometimes you will want to remove the packages you have installed.
+
+Removing a package is done with the command {bold}`npm rm <package-name>`{/bold}.
+
+Tip: you can use {bold}`npm uninstall`{/bold}, {bold}`npm r`{/bold}, {bold}`npm remove`{/bold} instead.

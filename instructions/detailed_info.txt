@@ -1,3 +1,7 @@
 To get detailed information about a package in the npm registry, you can use the command {bold}`npm view <package-name>`{/bold}.
 
 This will print the information provided in the packages {bold}`package.json`{/bold} file.
+
+You can retrieve specific properties from the information with {bold}`npm view <package-name> <property>`{/bold}
+
+Example: {bold}`npm view lodash description`{/bold}

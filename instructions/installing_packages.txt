@@ -1,0 +1,5 @@
+The primary goal of npm is to manage/install your packages.
+
+Installing a package you want is as simple as {bold}`npm install <package-name>`{/bold}.
+
+Tip: you can use {bold}`npm i`{/bold} for short.
