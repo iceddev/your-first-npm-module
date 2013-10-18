@@ -2,9 +2,10 @@
   "name": "yfnm",
   "version": "0.0.0",
   "description": "Learn to make an NPM module",
+  "preferGlobal": true,
   "main": "index.js",
   "bin": {
-    "your-first-npm-module": "index.js"
+    "yfnm": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +25,7 @@
     "meld": "~1.3.0",
     "lodash.map": "~2.2.1",
     "colors-tmpl": "~0.1.0",
-    "lodash.without": "~2.2.1"
+    "lodash.without": "~2.2.1",
+    "require-all": "0.0.8"
   }
 }

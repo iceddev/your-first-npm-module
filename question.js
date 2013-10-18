@@ -4,7 +4,7 @@ var when = require('when');
 
 var solution = require('./solution');
 
-var successMessage = '{blue}{bold}Challenge Comleted{/bold}{/blue}';
+var successMessage = '{blue}{bold}Challenge Completed{/bold}{/blue}';
 var failureMessage = '{red}{bold}Try Again{/bold}{/red}';
 
 function question(text, expectedCmd, success){
