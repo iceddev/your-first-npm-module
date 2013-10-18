@@ -8,7 +8,9 @@ var sortBy = require('lodash.sortby');
 
 var questions = require('require-all')(__dirname + '/questions');
 
-var sortOrder = sortBy(Object.keys(questions), function(num){ return parseInt(num, 10); });
+var sortOrder = sortBy(Object.keys(questions), function(num){
+  return parseInt(num, 10);
+});
 
 var sortedQuestions = map(sortOrder, function(num){
   return questions[num];

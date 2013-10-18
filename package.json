@@ -1,6 +1,6 @@
 {
   "name": "yfnm",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Learn to make an NPM module",
   "preferGlobal": true,
   "main": "index.js",
