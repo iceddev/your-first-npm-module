@@ -1,0 +1,5 @@
+Only npm users can publish packages to the registry.
+
+To add a user, use the command {bold}`npm adduser`{/bold}.
+
+To check your user, use the command {bold}`npm whoami`{/bold}.

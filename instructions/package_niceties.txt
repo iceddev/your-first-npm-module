@@ -1,0 +1,5 @@
+Being a good npm citizen involves adding things like a README and tests.
+
+A README is typically a markdown formatted file in the base of you project named {bold}README.md{/bold}.
+
+The command for running your tests is specified in your {bold}package.json{/bold} under {bold}scripts.test{/bold}.

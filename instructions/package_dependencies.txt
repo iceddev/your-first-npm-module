@@ -1,0 +1,9 @@
+Packages can have a variety of dependencies specified in the {bold}package.json{/bold} file.
+
+The 4 types of dependencies you can specify are {bold}dependencies, devDependencies, peerDependencies & optionalDependencies{/bold}.
+
+The most basic are plain dependencies, which are installed each time the package is installed.
+
+You can install a dependency and stamp it to your {bold}package.json{/bold} with {bold}`npm install --save <package-name>`{/bold}.
+
+Tip: you can {bold}`npm rm --save <package-name>`{/bold} to remove a package from your project and {bold}package.json{/bold}.
