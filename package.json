@@ -1,6 +1,6 @@
 {
   "name": "yfnm",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Learn to make an NPM module",
   "preferGlobal": true,
   "main": "index.js",
@@ -29,6 +29,6 @@
     "require-all": "0.0.8",
     "lodash.sortby": "~2.2.1",
     "semver": "~2.1.0",
-    "fuzzy": "~0.1.0"
+    "fuzzaldrin": "~0.1.0"
   }
 }

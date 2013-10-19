@@ -1,7 +1,7 @@
 var readline = require('readline');
 
 var when = require('when');
-var fuzzy = require('fuzzy');
+var score = require('fuzzaldrin').score;
 
 var solution = require('./solution');
 var attempt = require('./attempt');
@@ -36,7 +36,7 @@ function question(text, expectedCmd, success){
   }
 
   success = success || function(data){
-    return fuzzy.test(data[0], data[1]);
+    return score(data[0], data[1]);
   };
 
   console.log(text);
