@@ -6,13 +6,9 @@ var spawn = require('child_process').spawn;
 var when = require('when');
 
 module.exports = function(){
-  instructions('Naming Your Package', 'naming_packages');
+  instructions('Publish Your Package', 'publish_packages');
 
-  return question('{underline}Challenge{/underline}: Find a name that isn\'t taken and modify your package.json (verify by not passing a command here)', function(data){
-    if(data[0]){
-      return false;
-    }
-
+  return question('{underline}Challenge{/underline}: Publish your package', function(data){
     var pkgName = JSON.parse(fs.readFileSync('./package.json', 'utf-8')).name;
     var defer = when.defer();
     var result = '';
@@ -22,7 +18,7 @@ module.exports = function(){
       result += data;
     });
     child.on('close', function(code){
-      defer.resolve(new RegExp('is not in the npm registry').test(result));
+      defer.resolve(!(new RegExp('is not in the npm registry').test(result)));
     });
     return defer.promise;
   });

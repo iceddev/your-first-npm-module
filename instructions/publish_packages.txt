@@ -1,0 +1,5 @@
+Now you are ready to publish your module. Or are you?
+
+No, really.  Are you ready to publish it?
+
+Alrighty then, just run {bold}`npm publish`{/bold} and your package will be published to the npm registry.
