@@ -1,6 +1,7 @@
 var readline = require('readline');
 
 var when = require('when');
+var fuzzy = require('fuzzy');
 
 var solution = require('./solution');
 var attempt = require('./attempt');
@@ -35,11 +36,7 @@ function question(text, expectedCmd, success){
   }
 
   success = success || function(data){
-    if(typeof data[0] === 'string' && typeof data[1] === 'string'){
-      return data[0].replace(/\s/g, '') === data[1].replace(/\s/g, '');
-    } else {
-      return data[0] === data[1];
-    }
+    return fuzzy.test(data[0], data[1]);
   };
 
   console.log(text);
