@@ -3,8 +3,6 @@ var question = require('../question');
 var solution = require('../solution');
 
 var fs = require('fs');
-var spawn = require('child_process').spawn;
-var when = require('when');
 
 module.exports = function(){
   instructions('Npm Users', 'npm_users');

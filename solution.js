@@ -9,6 +9,10 @@ function solution(command){
   command = command.split(' ');
   var cmd = command[0];
   var args = command.slice(1);
+  if(process.platform === 'win32'){
+    args.unshift('/c', cmd);
+    cmd = 'cmd';
+  }
 
   if(cmd !== 'npm'){
     return;
