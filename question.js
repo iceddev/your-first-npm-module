@@ -36,7 +36,7 @@ function question(text, expectedCmd, success){
   }
 
   success = success || function(data){
-    return score(data[0], data[1]);
+    return score(data[0], data[1]) > 0.4;
   };
 
   console.log(text);
