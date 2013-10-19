@@ -19,7 +19,7 @@ var sortedQuestions = map(sortOrder, function(num){
   return questions[num];
 });
 
-sequence([questions[14]]).then(function(){
+sequence(sortedQuestions).then(function(){
   header('CONGRATULATIONS!! You completed all the challenges!');
   fs.createReadStream(__dirname + '/fireworks.txt', 'utf-8').pipe(process.stdout);
 }, console.error.bind(console));
