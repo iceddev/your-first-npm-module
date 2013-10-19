@@ -1,0 +1,9 @@
+The only thing an npm package requires is the {bold}package.json{/bold} file.
+
+This file can be generated with the {bold}`npm init`{/bold} command.
+
+{bold}`npm init`{/bold} will prompt you for information about your package.
+
+Answer these questions and your {bold}package.json{/bold} will be generated in the current directory.
+
+This command will also pick up any modules in the {bold}node_modules/{/bold} directory and add them as dependencies in your {bold}package.json{/bold}
