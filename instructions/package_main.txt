@@ -1,0 +1,3 @@
+Packages need an entry point.
+
+This file is specified in your {bold}package.json{/bold} but will default to {bold}index.js{/bold} if not specified.
