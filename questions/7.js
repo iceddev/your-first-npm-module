@@ -2,7 +2,6 @@ var instructions = require('../instructions');
 var question = require('../question');
 
 var fs = require('fs');
-var without = require('lodash.without');
 
 module.exports = function(){
   instructions('Creating Packages', 'creating_packages');

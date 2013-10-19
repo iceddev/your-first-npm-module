@@ -52,7 +52,7 @@ function question(text, expectedCmd, success){
           console.log(failureMessage);
           when(question(text, expectedCmd, success), defer.resolve);
         }
-      });
+      }, console.error.bind(console));
   });
 
   return defer.promise;

@@ -27,6 +27,7 @@
     "colors-tmpl": "~0.1.0",
     "lodash.without": "~2.2.1",
     "require-all": "0.0.8",
-    "lodash.sortby": "~2.2.1"
+    "lodash.sortby": "~2.2.1",
+    "semver": "~2.1.0"
   }
 }

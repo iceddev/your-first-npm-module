@@ -1,0 +1,5 @@
+And now, the hardest part about creating packages for npm!
+
+npm isn't namespaced (unlike github) so you must choose a name that isn't taken.
+
+You can use search or view to check if your name is taken.

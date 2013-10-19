@@ -1,0 +1,5 @@
+Versioning is an important part of npm.
+
+npm expects {bold}semantic versioning{/bold} for packages.
+
+I won't go into details of semver here, but you can read more at {underline}http://semver.org/{/underline}
