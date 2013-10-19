@@ -35,7 +35,7 @@ function question(text, expectedCmd, success){
   }
 
   success = success || function(data){
-    return data[0] === data[1];
+    return data[0].replace(/\s/g, '') === data[1].replace(/\s/g, '');
   };
 
   console.log(text);
